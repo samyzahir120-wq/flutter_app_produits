@@ -1,4 +1,6 @@
+
 import 'package:flutter/material.dart';
+import 'page_liste_produits.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,8 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Liste des produits',
+      home: ListProduits(),
     );
   }
 }
